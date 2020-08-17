@@ -1,7 +1,7 @@
 <template>
   <div id="app" style="max-width:18.75rem;margin:0 auto;">
     <keep-alive>
-      <router-view class="router-view" v-if="$route.meta.keepAlive" :style="'min-height:' + (height - (showhref == false ? ((clientWidth * 80) / 320) : ((clientWidth * 52) / 320))) + 'px;'"></router-view>
+      <router-view class="router-view" v-if="$route.meta.keepAlive" :style="'min-height:' + height + 'px;'"></router-view>
     </keep-alive>
     <router-view class="router-view" v-if="!$route.meta.keepAlive" :style="'min-height:' + (height - (showhref == false ? ((clientWidth * 80) / 320) : ((clientWidth * 52) / 320))) + 'px;'"></router-view>
   </div>
