@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const Login = resolve => require(['../views/login/login.vue'], resolve)
+const SignIn = resolve => require(['../views/login/signIn.vue'], resolve)
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '',
-    redirect: '/login'
+    redirect: '/signIn'
   },
   {
-    path: '/login',
-    component: Login,
+    path: '/signIn',
+    component: SignIn,
     meta: {
       title: '登录',
       keepAlive: false

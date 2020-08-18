@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: 'SignIn',
   data() {
     return {
       uPhone: '',
