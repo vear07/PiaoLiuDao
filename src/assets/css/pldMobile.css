@@ -39,7 +39,7 @@ body {
   text-size-adjust: 100% !important;
   -moz-text-size-adjust: 100% !important;
   -webkit-overflow-scrolling: touch;
-  --colorName: #589bf7;
+  --colorName: #4090eb;
 }
 *{-webkit-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 *{margin: 0;padding: 0;}
@@ -240,22 +240,14 @@ input:focus {outline: none;}
 /* 字体颜色 */
 .y-fc-white {color: #fff;}
 .y-fc-black {color: #333;}
-.y-fc-sblack {color: #666;}
+.y-fc-666 {color: #666;}
 .y-fc-999 {color: #999;}
 .y-fc-gray {color: #ccc;}
-.y-fc-sxgray {color: #A3A4A6;}
-.y-fc-blue {color: #589bf7;}
-.y-fc-red {color: #e04646;}
-.y-fc-mred {color: #e3371a;}
-.y-fc-xred {color: #F45353;}
-.y-fc-green {color: #45b930;}
-.y-fc-orange {color: #FFA84B;}
-.y-fc-sorange {color: #FAB855;}
-.y-fc-mgreen {color: #5cc747;}
-.y-fc-lightdarkgray {color: #d9dadd;}
-.y-fc-hot {color: #EB5247;}
-.y-fc-e6 {color: #E6E6E6;}
-.y-fc-e5 {color: #E5E5E5;}
+.y-fc-blue {color: #4090eb;}
+.y-fc-red {color: #eb4040;}
+.y-fc-green {color: #61cf4a;}
+.y-fc-e6 {color: #e6e6e6;}
+.y-fc-e5 {color: #e5e5e5;}
 
 /* 背景颜色 */
 .y-bg-default {background-color: #f7f9fa;}
@@ -263,19 +255,13 @@ input:focus {outline: none;}
 .y-bg-black {background-color: #000;}
 .y-bg-gray {background-color: #ccc;}
 .y-bg-f2 {background-color: #f2f2f2;}
-.y-bg-sblue {background-color: #9DC3F8;}
-.y-bg-blue {background-color: #589bf7;}
-.y-bg-green {background-color: #45b930;}
-.y-bg-xlgreen {background-color: #8FDA61;}
-.y-bg-lgray {background-color: #eeeeee;}
-.y-bg-xsgray {background-color: #fafafa;}
+.y-bg-blue {background-color: #4090eb;}
+.y-bg-green {background-color: #61cf4a;}
+.y-bg-eee {background-color: #eeeeee;}
+.y-bg-fa {background-color: #fafafa;}
 .y-bg-f5 {background-color: #F5F5F5;}
 .y-bg-f3 {background-color: #f3f3f3;}
-.y-bg-mwhite {background-color: #FAFAFA;}
-.y-bg-orange {background-color: #FFAB48;}
-.y-bg-xred {background-color: #F45353;}
-.y-bg-mred {background-color: #E04646;}
-.y-bg-crimson {background-color: #F7675F;}
+.y-bg-red {background-color: #eb4040;}
 
 /* 高度 */
 /* 等比高度 */
@@ -557,8 +543,8 @@ input:focus {outline: none;}
 .y-bd1-ccc {border: 0.025rem solid #cccccc;}
 .y-bd1-999 {border: 0.025rem solid #999999;}
 .y-bd1-e5 {border: 0.025rem solid #e5e5e5;}
-.y-bd1-blue {border: 0.025rem solid #589BF7;}
-.y-bd1-red {border: 0.025rem solid #e04646;}
+.y-bd1-blue {border: 0.025rem solid #4090eb;}
+.y-bd1-red {border: 0.025rem solid #eb4040;}
 /* 一边边框 */
 .y-bd-b1-e5 {border-bottom: 0.025rem solid #e5e5e5;}
 .y-bd-b1-999 {border-bottom: 0.025rem solid #999999;}
@@ -600,6 +586,9 @@ input:focus {outline: none;}
 .y-br-br10 {border-bottom-right-radius: 0.25rem;}
 .y-br-br20 {border-bottom-right-radius: 0.5rem;}
 .y-br-br30 {border-bottom-right-radius: 0.75rem;}
+
+/* 阴影 */
+.y-bs-black {box-shadow: 0 0 0.25rem rgba(0,0,0,0.12);}
 
 /* 填充 */
 /* 上边填充 */
