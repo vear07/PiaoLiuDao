@@ -10,12 +10,12 @@
         <div class="y-pt30">
           <div class="y-bg-f5 y-br80 y-pv30 y-flex-row y-aligni-center">
             <span class="iconfont y-fc-blue y-pl30 y-fs30">&#xe6f9;</span>
-            <input type="text" v-model="uPhone" class="y-flex-grow1 y-mh20 y-bg-f5 y-bd0 y-fs30" maxlength="11" oninput="value=value.replace(/[^\d]/g, '')" />
+            <input type="text" v-model="uPhone" placeholder="请输入手机号" class="y-flex-grow1 y-mh20 y-bg-f5 y-bd0 y-fs30" maxlength="11" oninput="value=value.replace(/[^\d]/g, '')" />
             <span class="iconfont y-pr30 y-fs30 y-fc-gray" v-if="uPhone.length > 0" @click="resetInput">&#xe641;</span>
           </div>
           <div class="y-bg-f5 y-br80 y-pv30 y-flex-row y-aligni-center y-mt30">
             <span class="iconfont y-fc-blue y-pl30 y-fs30">&#xe6fa;</span>
-            <input :type="isShowPassword ? 'text' : 'password'" v-model="uPassword" class="y-flex-grow1 y-mh20 y-bg-f5 y-bd0 y-fs30" maxlength="11" oninput="value=value.replace(/[^\d]/g, '')" />
+            <input :type="isShowPassword ? 'text' : 'password'" v-model="uPassword" placeholder="请输入密码" class="y-flex-grow1 y-mh20 y-bg-f5 y-bd0 y-fs30" maxlength="11" oninput="value=value.replace(/[^\d]/g, '')" />
             <span class="iconfont y-pr30 y-fs30 y-fc-gray" @click="showPassword">{{isShowPassword ? '&#xe73c;' : '&#xe7b3;'}}</span>
           </div>
         </div>
