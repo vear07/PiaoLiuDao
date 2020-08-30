@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const SignIn = resolve => require(['../views/login/signIn.vue'], resolve)
-const SignUp = resolve => require(['../views/login/signUp.vue'], resolve)
+const SignIn = ()=> import('../views/login/signIn.vue')
+const SignUp = ()=> import('../views/login/signUp.vue')
 
 Vue.use(VueRouter)
 
