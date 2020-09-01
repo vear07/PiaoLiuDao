@@ -4,8 +4,8 @@
       <img src="../../assets/img/bg_login_top.png" >
     </div>
     <div class="y-w100 y-ph30 y-pa y-pz100 y-pt30">
-      <h2 class="y-fs36 y-fc-white">用户注册</h2>
-      <p class="y-fs24 y-fc-white y-pt30">搭建专属于自己的漂流岛</p>
+      <h2 class="y-fs36 y-fc-white">忘记密码</h2>
+      <p class="y-fs24 y-fc-white y-pt30">请时刻牢记您的密码</p>
       <div class="y-bg-white y-pv30 y-ph20 y-br16 y-mt30 y-bs-black">
         <div class="y-w100 y-pv20 y-bd-b1-e5 y-flex-row">
           <input type="text" v-model="phone" placeholder="请输入手机号" class="y-flex-grow1 y-mh20 y-bg-white y-bd0 y-fs30" maxlength="11" oninput="value=value.replace(/[^\d]/g, '')" />
@@ -23,7 +23,7 @@
 					<input :type="isShowConfirmPassword ? 'text' : 'password'" v-model="confirmPassword" placeholder="请再次输入密码" class="y-flex-grow1 y-mh20 y-bg-white y-bd0 y-fs30" maxlength="11" @input="passwordInput(2)" />
 					<span class="iconfont y-pr30 y-fs30 y-fc-gray" @click="showPassword(2)">{{isShowConfirmPassword ? '&#xe73c;' : '&#xe7b3;'}}</span>
 				</div>
-				<div class="y-w100 y-fs30 y-lh y-fc-white y-bg-blue y-pv30 y-mt20 y-bd0 y-br80 y-flex-row y-flex-center">登录</div>
+				<div class="y-w100 y-fs30 y-lh y-fc-white y-bg-blue y-pv30 y-mt20 y-bd0 y-br80 y-flex-row y-flex-center">修改密码</div>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'SignUp',
+  name: 'Forget',
   data() {
     return {
       phone: '', // 手机号

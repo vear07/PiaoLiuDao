@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 const SignIn = ()=> import('../views/login/signIn.vue')
 const SignUp = ()=> import('../views/login/signUp.vue')
+const Forget = ()=> import('../views/login/forget.vue')
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,18 @@ const routes = [
       next()
     }
   },
+	{
+		path: '/forget',
+		component: Forget,
+		meta: {
+			title: '忘记密码',
+			keepAlive: false
+		},
+		beforeEnter:(to,from,next)=>{
+			document.title = to.matched[0].meta.title
+			next()
+		}
+	}
 ]
 
 const router = new VueRouter({
